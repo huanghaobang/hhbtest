@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="d3.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+    <script src="js/d3/d3.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body>
+<h1>
+    <div style="text-align: center;">covid-19</div>
+</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <div class="main-controls">
+                <div class="color-container">
+                    <p class="preview-text">Color</p>
+
+                    <div class="preview"></div>
+
+                    <p class="preview-text">Date</p>
+
+                    <div id="dropdown-menu"></div>
+                </div>
+
+                <!-- colorpicker element -->
+                <div class="colorpicker" style="display:none">
+                    <canvas id="picker" var="1" width="300" height="300"></canvas>
+                    <div class="controls">
+                        <div><label>R</label> <input type="text" id="rVal" /></div>
+                        <div><label>G</label> <input type="text" id="gVal" /></div>
+                        <div><label>B</label> <input type="text" id="bVal" /></div>
+                        <div><label>RGB</label> <input type="text" id="rgbVal" /></div>
+                        <div><label>HEX</label> <input type="text" id="hexVal" /></div>
+                    </div>
+                </div>
+                <!-- TEST FOR LEGEND -->
+                <div id="legend"></div>
+
+
+
+                <div id="gold-medal-country">
+                    <img id="medal-image" src="images/gold-medal.png" alt="gold medal" width="50px" height="50px">
+                    <p id="confirmedCount-medal-country-text"> confirmedCount: 0</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-10">
+            <!-- Element that will contain the window and the map -->
+            <div id="container"></div>
+            <!-- Element that will contain hover over tool tip-->
+            <div id="tooltip-container"></div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<!-- Library for topojson map processing-->
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<!-- Popper, used by bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<!-- Bootstrap js-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<!-- Main js code for project-->
+<script src="d3.js"></script>
+
+
+</body>
+
+
+</html>

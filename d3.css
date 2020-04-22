@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Germania+One|Lato|Montserrat');
+
+svg {
+    background: white;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.country {
+    fill: #cccccc;
+    stroke: #333333;
+    stroke-width: 0.5px;
+}
+
+.selected {
+    opacity: 0.7;
+}
+
+#tooltip-container {
+    position: absolute;
+    text-align: left;
+    padding: 10px;
+    font: 12px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    background: #333333;
+    opacity: 0.7;
+    color: white;
+}
+
+.year-option-select {
+    margin-left: 5px;
+    width: auto;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#container {
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #F0F8FF;
+}
+
+/* Medal display Containers */
+#gold-medal-country {
+    margin-top: 15px;
+    display: flex;
+}
+
+#silver-medal-country {
+    margin-top: 15px;
+    display: flex;
+}
+
+#bronze-medal-country {
+    margin-top: 15px;
+    display: flex;
+}
+
+#medal-image {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+#gold-medal-country-text {
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    margin: 12px 0 0 12px;
+}
+
+#silver-medal-country-text {
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    margin: 12px 0 0 12px;
+}
+
+#bronze-medal-country-text {
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    margin: 12px 0 0 12px;
+}
+
+/* colorpicker styles */
+.colorpicker {
+    background-color: #222222;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2px 2px 2px #444444;
+    color: #FFFFFF;
+    font-size: 12px;
+    position: absolute;
+    width: 460px;
+    z-index: 9999;
+}
+
+#picker {
+    cursor: crosshair;
+    float: left;
+    margin: 10px;
+    border: 0;
+}
+
+.controls {
+    float: right;
+    margin: 10px;
+}
+
+.controls>div {
+    border: 1px solid #2F2F2F;
+    margin-bottom: 5px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.controls label {
+    float: left;
+}
+
+.controls>div input {
+    background-color: #121212;
+    border: 1px solid #2F2F2F;
+    color: #DDDDDD;
+    float: right;
+    font-size: 10px;
+    height: 14px;
+    margin-left: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 75px;
+}
+
+.preview {
+    background: url("images/select.png") repeat scroll center center transparent;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #444444;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin-top: 2px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: none;
+    /*black;*/
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: Consolas, courier;
+    fill: #000;
+    font-size: 9pt;
+}
+
+.legendTitle {
+    font-size: 15px;
+    fill: #4F4F4F;
+    font-weight: 12;
+}
+
+#legend {
+    padding-top: 10px;
+}
+
+.color-container {
+    display: flex;
+}
+
+.preview-text {
+    font-size: 20px;
+    border: solid gray;
+    border-radius: 10px;
+}
+
+
+
